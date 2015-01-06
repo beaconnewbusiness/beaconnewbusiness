@@ -493,6 +493,7 @@ header {
   padding: 0 0 0 0;
   color: #ffffff;
   background-color: #414143;
+  height: 350px;
   min-height: 21.875rem;
   max-height: 21.875rem;
   text-align: center; }
