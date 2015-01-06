@@ -1,0 +1,83 @@
+/* ==========================================================================
+   LOGIN SPECIFIC STYLES
+   ========================================================================== */
+
+
+// HEADER
+
+
+#login header {
+    background-color: $beacon-green;
+}
+
+
+// FOLD
+
+
+#login .ta {
+    background-color: #ffffff;
+}
+
+
+#login .td {
+//    padding-top: 50px;
+    vertical-align: top;
+}
+
+#login .band li {
+    text-align: center;
+}
+
+#login li img {
+    width: calculateRem(50px);
+    padding: 25px 0;
+}
+
+@media only screen and (min-width: calculateRem(1000px)) { 
+
+    
+    #login .td {
+        padding-top: 125px;
+//        padding-bottom: 125px;
+    }
+}
+
+
+// FORM
+
+
+#login-form {
+    margin: 0 auto 0 auto;
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+}
+
+#login-form span {
+    display: block;
+    margin: 20px 0;
+}
+
+#login-form label {
+    display: block;
+    text-align: left;
+    padding: 10px 0;
+    width: 90%;
+}
+
+#login-form .tip {
+    font-style: italic;
+}
+
+#login-form input {
+    width: 100%;
+    padding: 15px 20px;
+    text-align: center;
+    display: block;
+}
+
+#login-form input[type=submit] {
+    background-color: $beacon-green;
+    color: #ffffff;
+    border: 1px solid $beacon-green;
+}

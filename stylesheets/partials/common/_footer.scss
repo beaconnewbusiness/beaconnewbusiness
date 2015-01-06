@@ -1,0 +1,82 @@
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+
+
+footer {
+    padding: 50px 0;
+    background-color: $beacon-darkgrey;
+}
+
+footer h3 {
+    color:#ffffff;
+    font-weight: 400;
+    @include fontSize(18px);
+}
+
+footer ul {
+    display: none;
+}
+
+#footer_logo {
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+
+footer li a:hover {
+    color: $beacon-salmon;
+}
+
+@media only screen and (min-width: calculateRem(1000px)) {
+
+    footer {
+        padding: 100px 0;
+
+    }
+
+    footer>div>ul {
+        display: inline-block;
+        float:right;
+    }
+
+    footer>div>ul>ul {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 0 10px 75px;
+    }
+
+    footer li {
+        padding: 3px 0;
+    }
+
+    footer h3 {
+        padding: 0 0 10px 0;
+    }
+
+    #footer_logo {
+        max-width: 150px;
+        float: left;
+    }
+    
+}
+
+
+/* ==========================================================================
+   BASELINE
+   ========================================================================== */
+
+
+#baseline {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#baseline p {
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    color: #414143;
+    padding: 10px 0;
+    font-size: 16px;
+}

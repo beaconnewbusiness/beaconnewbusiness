@@ -1,0 +1,1053 @@
+/*
+ *
+ * BEACON MAIN STYLESHEET
+ * CREATED BY: KARHIDE AT ARTICLE
+ * REPRODUCTION PROHIBITED WITHOUT PERMISSION FROM THE AUTHOR
+ * 2014
+ * 
+ */
+/**
+ * Convert font-size from px to rem with px fallback
+ *
+ * @param $size - the value in pixel you want to convert
+ *
+ * e.g. p {@include fontSize(12px);}
+ * 
+ */
+/* ==========================================================================
+   BEGIN: COMMON STYLES
+   ========================================================================== */
+/* ==========================================================================
+   RESET - USED IN CONJUNCTION WITH NORMALIZE.CSS
+   ========================================================================== */
+html,
+button,
+input,
+select,
+textarea {
+  color: #222; }
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+audio,
+canvas,
+img,
+video {
+  vertical-align: middle; }
+
+/*
+ * Remove default fieldset styles.
+ */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical; }
+
+/*
+ * Style the browsehappy dialog
+ */
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+/*
+ * Viewport
+ */
+@-ms-viewport {
+  width: device-width; }
+/*
+ * Border Box model
+ */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased; }
+
+/* ==========================================================================
+   HTML & BODY
+   ========================================================================== */
+html {
+  font-family: "Bitter", serif; }
+
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 1rem; }
+
+/* ==========================================================================
+   PAGE LAYOUT
+   ========================================================================== */
+section, header, footer {
+  width: 100%; }
+
+section {
+  padding: 6.25rem 0; }
+
+.ta {
+  display: table; }
+
+.tr {
+  display: table-row; }
+
+.td {
+  display: table-cell;
+  vertical-align: middle; }
+
+.content {
+  width: 90%;
+  max-width: 75rem;
+  margin: 0 auto; }
+
+.full-width {
+  width: 100%; }
+
+.half-width {
+  width: 100%;
+  display: inline-block; }
+
+.third-width {
+  width: 100%;
+  display: inline-block; }
+
+@media only screen and (min-width: 50rem) {
+  .half-width {
+    width: 49%; }
+
+  .third-width {
+    width: 33%; } }
+@media only screen and (min-width: 78.125rem) {
+  .content {
+    width: 80%; } }
+/* ==========================================================================
+   FIGURES
+   ========================================================================== */
+img {
+  max-width: 100%; }
+
+.icon-small {
+  display: inline-block;
+  height: 2.1875rem;
+  margin: 5px;
+  vertical-align: top; }
+
+/* ==========================================================================
+   CLEAR FIX
+   ========================================================================== */
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+header,
+section,
+footer,
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.clearfix:after {
+  clear: both; }
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+  *zoom: 1; }
+
+/* ==========================================================================
+   TYPOGRAPHY
+   ========================================================================== */
+h1, h2, h3, p, a {
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+  text-decoration: none;
+  color: #414143; }
+
+h1 {
+  font-family: "Bitter", serif; }
+
+.heading {
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  width: 80%;
+  max-width: 25rem; }
+
+.heading_large {
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 700;
+  color: #414143;
+  font-size: 1.5rem;
+  max-width: 37.5rem; }
+
+@media only screen and (min-width: 21.875rem) {
+  .heading {
+    font-size: 2.25rem;
+    line-height: 2.875rem; }
+
+  .heading_large {
+    font-size: 2.25rem;
+    max-width: 37.5rem; } }
+@media only screen and (min-width: 28.125rem) {
+  .heading {
+    font-size: 2.25rem;
+    line-height: 2.875rem;
+    max-width: 56.25rem; }
+
+  .heading_large {
+    font-size: 3rem;
+    max-width: 56.25rem; } }
+@media only screen and (min-width: 62.5rem) {
+  .heading {
+    font-size: 2.8125rem;
+    line-height: 3.4375rem;
+    max-width: 56.25rem; }
+
+  .heading_large {
+    font-size: 3.75rem;
+    max-width: 75rem; } }
+h2 {
+  font-family: "Bitter", serif;
+  font-weight: 700;
+  font-size: 24px;
+  font-size: 1.5rem;
+  padding-bottom: 3.125rem; }
+
+@media only screen and (min-width: 28.125rem) {
+  h2 {
+    font-size: 36px;
+    font-size: 2.25rem; } }
+h3 {
+  font-family: "Bitter", serif;
+  font-weight: 700;
+  font-size: 18px;
+  font-size: 1.125rem; }
+
+.h3_regular {
+  font-weight: 400;
+  line-height: 1.5rem; }
+
+.h3_italic {
+  font-weight: 400;
+  font-style: italic;
+  text-align: center; }
+
+@media only screen and (min-width: 28.125rem) {
+  h3 {
+    font-size: 24px;
+    font-size: 1.5rem; }
+
+  .h3_regular {
+    line-height: 2.25rem; } }
+p {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  width: 100%;
+  float: left;
+  padding: 0 0 0 0;
+  font-family: "Open Sans", "sans-serif"; }
+
+.subheading {
+  color: #ffffff;
+  max-width: 700px;
+  float: none;
+  margin: 20px auto;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.9375rem; }
+
+.quote {
+  font-family: "Bitter", serif;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 2.25rem; }
+
+.statement {
+  font-family: "Bitter", serif;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1.9375rem; }
+
+.quote, .statement {
+  padding-bottom: 0; }
+
+@media only screen and (min-width: 28.125rem) {
+  p {
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 1.875rem; }
+
+  .subheading {
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 1.9375rem; }
+
+  .quote {
+    font-size: 30px;
+    font-size: 1.875rem;
+    line-height: 3rem; }
+
+  .statement {
+    font-size: 36px;
+    font-size: 2.25rem;
+    line-height: 2.6875rem; } }
+@media only screen and (min-width: 62.5rem) {
+  p {
+    padding: 0 0 0 0; }
+
+  .quote, .statement {
+    width: 100%;
+    max-width: 80%; }
+
+  .left {
+    padding-right: 10px; }
+
+  .right {
+    padding-left: 10px; } }
+a {
+  font-family: "Bitter", serif;
+  color: #ffffff;
+  cursor: pointer; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+header {
+  background-color: #172820; }
+
+.desktop_nav {
+  display: none; }
+
+#mobile_logo {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0 50px 10px; }
+
+#mobile_logo h1 {
+  color: #ffffff;
+  font-weight: 400; }
+
+#mobile_menu {
+  display: inline-block;
+  vertical-align: middle;
+  float: right;
+  padding: 10px 10px 0 0; }
+
+.mobile_nav > ul {
+  display: none;
+  float: right;
+  text-align: right;
+  margin: 10px 0 0 0;
+  width: 100%; }
+
+.mobile_nav ul a {
+  border-bottom: 1px solid #ffffff;
+  width: 100%;
+  display: block;
+  padding: 15px 10px; }
+
+.mobile_nav ul a:hover {
+  background-color: #ffffff;
+  color: #172820; }
+
+@media only screen and (min-width: 31.25rem) {
+  #mobile_logo {
+    padding: 3.125rem;
+    padding-left: 0;
+    width: auto;
+    text-align: left; }
+
+  #mobile_menu {
+    padding: 3.125rem;
+    padding-right: 0; } }
+@media only screen and (min-width: 62.5rem) {
+  header {
+    position: fixed;
+    z-index: 1;
+    background-color: transparent; }
+
+  .mobile_nav {
+    display: none; }
+
+  .desktop_nav {
+    display: block;
+    height: 9.375rem; }
+
+  .desktop_nav ul {
+    float: right; }
+
+  .desktop_nav ul li {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 0 0 2.5rem;
+    line-height: 9.375rem;
+    font-size: 1.125rem; }
+
+  .desktop_nav ul li a:hover {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ffffff; }
+
+  #desktop_logo {
+    max-width: 11.25rem;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 9.375rem; } }
+/* ==========================================================================
+   FOLD
+   ========================================================================== */
+.fold {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 25px 0 25px 0;
+  color: #ffffff;
+  background-color: #414143;
+  min-height: 25rem;
+  max-height: 46.875rem;
+  text-align: center; }
+
+.fold img {
+  padding: 2% 0; }
+
+.fold h1 {
+  padding-top: 0;
+  width: 100%;
+  padding-bottom: 20px; }
+
+@media only screen and (min-width: 28.125rem) {
+  .fold {
+    padding: 0 0 0 0;
+    min-height: 37.5rem; }
+
+  .fold h1 {
+    width: 80%; } }
+@media only screen and (min-width: 62.5rem) {
+  .fold h1 {
+    padding-top: 6.875rem;
+    padding-bottom: 0; } }
+.fold_mini {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0 0 0 0;
+  color: #ffffff;
+  background-color: #414143;
+  min-height: 21.875rem;
+  max-height: 21.875rem;
+  text-align: center; }
+
+@media only screen and (min-width: 28.125rem) {
+  .fold_mini {
+    min-height: 21.875rem; } }
+@media only screen and (min-width: 62.5rem) {
+  .fold_mini h1 {
+    padding-top: 6.875rem;
+    padding-bottom: 0; } }
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+footer {
+  padding: 50px 0;
+  background-color: #414143; }
+
+footer h3 {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 18px;
+  font-size: 1.125rem; }
+
+footer ul {
+  display: none; }
+
+#footer_logo {
+  max-width: 150px;
+  margin: 0 auto; }
+
+footer li a:hover {
+  color: #fbcba7; }
+
+@media only screen and (min-width: 62.5rem) {
+  footer {
+    padding: 100px 0; }
+
+  footer > div > ul {
+    display: inline-block;
+    float: right; }
+
+  footer > div > ul > ul {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0 10px 75px; }
+
+  footer li {
+    padding: 3px 0; }
+
+  footer h3 {
+    padding: 0 0 10px 0; }
+
+  #footer_logo {
+    max-width: 150px;
+    float: left; } }
+/* ==========================================================================
+   BASELINE
+   ========================================================================== */
+#baseline {
+  margin: 0 auto;
+  text-align: center; }
+
+#baseline p {
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+  color: #414143;
+  padding: 10px 0;
+  font-size: 16px; }
+
+/* ==========================================================================
+   BEGIN: PAGE SPECIFIC STYLES
+   ========================================================================== */
+/* ==========================================================================
+   INDEX PAGE
+   ========================================================================== */
+#index .fold {
+  background-image: url("../img/Lightbulbs_1920_750_darkened.jpg"); }
+
+#index-introduction {
+  padding-bottom: 0; }
+
+#index-intro-quote {
+  width: 100%; }
+
+#index-introduction p {
+  max-width: 100%;
+  float: none;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 2.25rem; }
+
+@media only screen and (min-width: 50rem) {
+  #index-introduction p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-width: 88%;
+    font-size: 28px;
+    font-size: 1.75rem;
+    line-height: 2.5rem; }
+
+  #index-introduction .content {
+    background-image: url("../img/Beacon_logo_lines.png");
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: contain; } }
+#index-page-options ul {
+  margin: 0 auto;
+  text-align: center; }
+
+#index-page-options li {
+  width: 100%;
+  margin: 0 auto 30px auto;
+  padding: 0;
+  background-color: #e6e6e6;
+  border-bottom: 10px solid #d3d4d6; }
+
+#index-page-options li + li + li {
+  margin: 0 auto 30px auto; }
+
+#index-page-options li h3 {
+  color: #414143; }
+
+#index-page-options li p {
+  width: 100%;
+  padding: 10px 0;
+  color: #414143; }
+
+.options-image {
+  width: 100%;
+  height: 175px;
+  background-size: cover;
+  background-position: center; }
+
+#option-one {
+  background-image: url("../img/meeting_thumb.jpg"); }
+
+#option-two {
+  background-image: url("../img/engine_thumb.jpg"); }
+
+#option-three {
+  background-image: url("../img/typewriter_thumb.jpg"); }
+
+.options-overlay {
+  width: 100%;
+  height: 175px;
+  background: rgba(0, 0, 0, 0.75);
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: opacity .25s ease;
+  -moz-transition: opacity .25s ease; }
+
+.options-image:hover .options-overlay {
+  opacity: 1; }
+
+.plus {
+  font-weight: bolder;
+  font-size: 3em;
+  color: #ffffff;
+  position: relative;
+  top: 25%; }
+
+.options-description {
+  background-color: #e6e6e6;
+  padding: 30px 10px 30px 10px;
+  text-align: left; }
+
+.options-description a {
+  width: 100%;
+  padding: 10px 0;
+  color: #414143;
+  font-style: italic; }
+
+.options-description a:hover {
+  color: #fbcba7; }
+
+@media only screen and (min-width: 43.75rem) {
+  #index-page-options li {
+    min-height: 380px;
+    width: 30%;
+    margin: 0px 5% 30px 0;
+    float: left;
+    padding: 0; } }
+#index-bottom-band {
+  text-align: center;
+  margin: 0 auto;
+  background-color: #484C50; }
+
+#index-bottom-band p {
+  text-align: center;
+  color: #ffffff;
+  margin: 0 auto;
+  float: none; }
+
+/* ==========================================================================
+   ABOUT PAGE
+   ========================================================================== */
+#about .fold_mini {
+  background-image: url("../img/wood_1000_750.jpg");
+  background-position: bottom; }
+
+@media only screen and (min-width: 62.5rem) {
+  #about .fold_mini {
+    background-image: url("../img/wood_1920_750.jpg");
+    background-position: bottom; } }
+#about-introduction {
+  text-align: center;
+  padding-bottom: 0; }
+
+#about-introduction p {
+  max-width: 800px;
+  margin: 0 auto;
+  float: none; }
+
+#about-our-skills {
+  padding: 50px 0; }
+
+#about-our-skills ul {
+  margin: 0 auto;
+  text-align: center; }
+
+#about-our-skills li {
+  width: 80%;
+  margin: 0 auto 30px auto;
+  display: inline-block;
+  padding: 0;
+  text-align: center; }
+
+#about-our-skills li:nth-child(3) {
+  margin-right: 0; }
+
+#about-our-skills img {
+  height: 100px; }
+
+#about-our-skills li h3 {
+  padding: 10px 0 50px 0; }
+
+#about-our-skills li p {
+  text-align: center;
+  padding: 30px 0 0 0;
+  border-top: 1px solid #414143; }
+
+@media only screen and (min-width: 43.75rem) {
+  #about-our-skills {
+    padding: 100px 0; }
+
+  #about-our-skills li {
+    width: 30%;
+    margin: 0px 5% 30px 0;
+    float: left;
+    padding: 0; }
+
+  #about-our-skills li:nth-child(3) {
+    margin-right: 0; } }
+#about-quote-band {
+  background-image: url("../img/meeting_1920_450.jpg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#about-quote-band .quote {
+  color: #ffffff;
+  text-align: center;
+  margin: 0 auto;
+  float: none; }
+
+#about-quote-band p {
+  text-align: center;
+  color: #d3d4d6;
+  padding: 10px 0; }
+
+#about-quote-band p + p + p {
+  padding: 0; }
+
+@media only screen and (min-width: 62.5rem) {
+  #about-quote-band .quote {
+    color: #ffffff; } }
+#about-gunpowder-title {
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 0; }
+
+#about-gunpowder-title h3 {
+  margin: 0 auto;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #414143; }
+
+#about-gunpowder-title p {
+  max-width: 800px;
+  margin: 0 auto;
+  float: none; }
+
+#about-bomb {
+  margin-bottom: 25px; }
+
+#about-gunpowder-features ul {
+  margin: 0 auto;
+  text-align: center; }
+
+#about-gunpowder-features li {
+  width: 100%;
+  margin: 0 0 30px 0;
+  float: left;
+  padding: 0; }
+
+#about-gunpowder-features li:nth-child(3) {
+  margin-right: 0; }
+
+#about-gunpowder-features div {
+  background-size: cover;
+  background-position: center;
+  height: 350px; }
+
+#gunpowder-one {
+  background-image: url("../img/gunpowder_thumb.jpg"); }
+
+#gunpowder-two {
+  background-image: url("../img/phone_thumb.jpg"); }
+
+#gunpowder-three {
+  background-image: url("../img/mac_thumb.jpg"); }
+
+@media only screen and (min-width: 43.75rem) {
+  #about-gunpowder-features li {
+    width: 30%;
+    margin: 0px 5% 30px 0;
+    float: left;
+    padding: 0; }
+
+  #about-gunpowder-features li:nth-child(3) {
+    margin-right: 0; } }
+/* ==========================================================================
+   CONCEPT SPECIFIC STYLES
+   ========================================================================== */
+#concept .fold_mini {
+  background-image: url("../img/railway_1000_750.jpg");
+  background-position: bottom; }
+
+@media only screen and (min-width: 62.5rem) {
+  #concept .fold_mini {
+    background-image: url("../img/railway_1920_750.jpg");
+    background-position: bottom; } }
+#concept-process-title {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 600px;
+  padding-bottom: 0; }
+
+#concept-process-title h3 {
+  margin: 0 auto;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #414143; }
+
+#concept-fundamentals li {
+  padding: 15px 0;
+  vertical-align: top; }
+
+#concept-fundamentals h3 {
+  padding: 5px 0; }
+
+@media only screen and (min-width: 50rem) {
+  #concept-fundamentals li:nth-child(odd) {
+    padding: 15px 15px 15px 0; }
+
+  #concept-fundamentals li:nth-child(even) {
+    padding: 15px 0 15px 15px; } }
+#concept-top-band {
+  text-align: center;
+  background-color: #d3d4d6;
+  background-image: url("../img/engine_1920_450.jpg"); }
+
+#concept-top-band .quote {
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+  float: none; }
+
+#concept-process ul {
+  margin: 0 auto;
+  text-align: center; }
+
+#concept-process li {
+  width: 80%;
+  margin: 0 auto 30px auto;
+  display: inline-block;
+  padding: 0;
+  text-align: center; }
+
+#concept-process li:nth-child(3) {
+  margin-right: 0; }
+
+#concept-process img {
+  height: 100px;
+  padding-top: 15px; }
+
+#concept-process li h3 {
+  padding: 10px 0 50px 0; }
+
+#concept-process li p {
+  text-align: center;
+  padding: 30px 0 0 0;
+  border-top: 1px solid #414143; }
+
+@media only screen and (min-width: 43.75rem) {
+  #concept-process {
+    padding: 100px 0; }
+
+  #concept-process li {
+    width: 30%;
+    margin: 0px 5% 30px 0;
+    float: left;
+    padding: 0; }
+
+  #concept-process li:nth-child(3) {
+    margin-right: 0; }
+
+  #concept-process li p {
+    text-align: center; } }
+#concept-results {
+  background-color: #484C50; }
+
+#concept-results p, #concept-results h2 {
+  color: #ffffff; }
+
+/* ==========================================================================
+   LOGIN SPECIFIC STYLES
+   ========================================================================== */
+#login header {
+  background-color: #172820; }
+
+#login .ta {
+  background-color: #ffffff; }
+
+#login .td {
+  vertical-align: top; }
+
+#login .band li {
+  text-align: center; }
+
+#login li img {
+  width: 3.125rem;
+  padding: 25px 0; }
+
+@media only screen and (min-width: 62.5rem) {
+  #login .td {
+    padding-top: 125px; } }
+#login-form {
+  margin: 0 auto 0 auto;
+  text-align: center;
+  width: 90%;
+  max-width: 500px; }
+
+#login-form span {
+  display: block;
+  margin: 20px 0; }
+
+#login-form label {
+  display: block;
+  text-align: left;
+  padding: 10px 0;
+  width: 90%; }
+
+#login-form .tip {
+  font-style: italic; }
+
+#login-form input {
+  width: 100%;
+  padding: 15px 20px;
+  text-align: center;
+  display: block; }
+
+#login-form input[type=submit] {
+  background-color: #172820;
+  color: #ffffff;
+  border: 1px solid #172820; }
+
+/* ==========================================================================
+   CONTACT SPECIFIC STYLES
+   ========================================================================== */
+#contact .fold {
+  background-image: url("../img/typewriter_1920_750.jpg"); }
+
+#contact-introduction h2 {
+  text-align: center;
+  float: none;
+  margin: 0 auto; }
+
+#contact-introduction p {
+  max-width: 800px;
+  text-align: center;
+  float: none;
+  margin: 0 auto; }
+
+.contact {
+  vertical-align: top;
+  padding: 0 15px; }
+
+.contact + .contact {
+  padding-top: 50px; }
+
+.contact h2 {
+  color: #ffffff;
+  display: inline-block;
+  vertical-align: top; }
+
+.contact p {
+  color: #ffffff;
+  padding-bottom: 20px; }
+
+.contact div {
+  display: block;
+  margin: 10px 0;
+  color: #ffffff; }
+
+#contact-information {
+  background-color: #414143; }
+
+.contact-email-name {
+  display: block;
+  color: #fbcba7;
+  font-weight: 700;
+  padding: 5px 0; }
+
+.contact-email-address {
+  display: block;
+  color: #ffffff;
+  font-weight: 400;
+  padding: 5px 0; }
+
+#contact-phone {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 2em; }
+
+@media only screen and (min-width: 50rem) {
+  .contact + .contact {
+    padding-top: 0px; } }
+@media only screen and (min-width: 50rem) {
+  .contact-email-name {
+    display: inline; }
+
+  .contact-email-address {
+    display: inline; } }
+.contact-address {
+  color: #ffffff;
+  font-weight: 700; }
+
+#contact-location {
+  background-color: #fbcba7; }
+
+@media only screen and (min-width: 62.5rem) {
+  #contact-bottom-band {
+    background-image: url("../img/map.png");
+    background-repeat: no-repeat;
+    background-position: top center; } }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,251 @@
+/* ==========================================================================
+   TYPOGRAPHY
+   ========================================================================== */
+
+
+h1, h2, h3, p, a {
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    text-decoration: none;
+    color: $beacon-darkgrey;
+}
+
+
+// H1 STYLES
+
+
+h1 {
+    font-family: $bitter;
+}
+
+.heading {
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 700;
+    color:#ffffff;
+    font-size: calculateRem(24px);
+    line-height: calculateRem(36px);
+    width: 80%;
+    max-width: calculateRem(400px);
+}
+
+.heading_large {
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 700;
+    color: $beacon-darkgrey;
+    font-size: calculateRem(24px);
+    max-width: calculateRem(600px);
+}
+
+
+@media only screen and (min-width: calculateRem(350px)) {
+
+    .heading {
+        font-size: calculateRem(36px);
+        line-height: calculateRem(46px);
+    }
+    
+    .heading_large {
+        font-size: calculateRem(36px);
+        max-width: calculateRem(600px);
+    }
+
+}
+
+
+@media only screen and (min-width: calculateRem(450px)) {
+
+    .heading {
+        font-size: calculateRem(36px);
+        line-height: calculateRem(46px);
+        max-width: calculateRem(900px);
+    }
+    
+    .heading_large {
+        font-size: calculateRem(48px);
+        max-width: calculateRem(900px);
+    }
+
+}
+
+@media only screen and (min-width: calculateRem(1000px)) {
+
+    .heading {
+        font-size: calculateRem(45px);
+        line-height: calculateRem(55px);
+        max-width: calculateRem(900px);
+    }
+    
+    .heading_large {
+        font-size: calculateRem(60px);
+        max-width: calculateRem(1200px);
+    }
+    
+}
+
+
+// H2 STYLES
+
+
+h2 {
+    font-family: $bitter;
+    font-weight: 700;
+    @include fontSize(24px);
+//    padding-top: calculateRem(50px);
+    padding-bottom: calculateRem(50px);
+}
+
+
+@media only screen and (min-width: calculateRem(450px)) {
+
+    h2 {
+        @include fontSize(36px);
+    }
+
+}
+
+
+// H3 STYLES
+
+
+h3 {
+    font-family: $bitter;
+    font-weight: 700;
+    @include fontSize(18px);
+}
+
+.h3_regular {
+    font-weight: 400;
+    line-height: calculateRem(24px);
+}
+
+.h3_italic {
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+}
+
+
+@media only screen and (min-width: calculateRem(450px)) {
+
+    h3 {
+        @include fontSize(24px);
+    }
+    
+    .h3_regular {
+        line-height: calculateRem(36px);
+    }
+
+
+}
+
+
+// P STYLES
+
+
+p {
+    @include fontSize(18px);
+    line-height: calculateRem(30px);
+    width: 100%;
+    float:left;
+    padding: 0 0 0 0;
+    font-family: $open-sans;
+//    padding-bottom: calculateRem(50px);
+}
+    
+.subheading {
+    color: #ffffff;
+    max-width: 700px;
+    float:none;
+    margin: 20px auto;
+    @include fontSize(18px);
+    line-height: calculateRem(31px);
+}
+
+.quote {
+    font-family: $bitter;
+    @include fontSize(18px);
+    line-height: calculateRem(36px);
+}
+
+.statement {
+    font-family: $bitter;
+    @include fontSize(24px);
+    line-height: calculateRem(31px);
+}
+
+.quote, .statement {
+    padding-bottom: 0;
+}
+
+
+@media only screen and (min-width: calculateRem(450px)) {
+
+    p {
+        @include fontSize(18px);
+        line-height: calculateRem(30px);
+    }
+    
+    
+    .subheading {
+        @include fontSize(24px);
+        line-height: calculateRem(31px);
+    }
+    
+    
+    .quote {
+        @include fontSize(30px);
+        line-height: calculateRem(48px);
+    }
+
+    .statement {
+        @include fontSize(36px);
+        line-height: calculateRem(43px);
+    }
+
+}    
+    
+@media only screen and (min-width: calculateRem(1000px)) {
+
+    
+    p {
+        padding: 0 0 0 0;
+    }
+    
+    .quote, .statement {
+        width: 100%;
+        max-width: 80%;
+    }
+    
+    .left {
+        padding-right: 10px;
+    }
+    
+    .right {
+        padding-left: 10px;
+    }
+
+}
+
+
+// LINK STYLES
+
+
+a {
+    font-family: $bitter;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+// LIST STYLES
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+

@@ -1,0 +1,86 @@
+/* ==========================================================================
+   FOLD
+   ========================================================================== */
+
+
+// NORMAL FOLD
+
+.fold {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 25px 0 25px 0;
+    color:#ffffff;
+    background-color: $beacon-darkgrey;
+    min-height: calculateRem(400px);
+    max-height: calculateRem(750px);
+    text-align: center;
+}    
+
+.fold img {
+    padding: 2% 0;
+}
+
+.fold h1 {
+    padding-top: 0;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+@media only screen and (min-width: calculateRem(450px)) {
+
+    .fold {
+        padding: 0 0 0 0;
+        min-height: calculateRem(600px);
+    }    
+    
+    .fold h1 {
+        width: 80%;
+    }
+
+}
+
+@media only screen and (min-width: calculateRem(1000px)) {
+
+    .fold h1 {
+        padding-top: calculateRem(110px);
+        padding-bottom: 0;
+    }
+    
+}
+
+
+// MINI FOLD
+
+
+.fold_mini {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0 0 0 0;
+    color:#ffffff;
+    background-color: $beacon-darkgrey;
+    min-height: calculateRem(350px);
+    max-height: calculateRem(350px);
+    text-align: center;
+}
+
+
+@media only screen and (min-width: calculateRem(450px)) {
+
+.fold_mini {
+    min-height: calculateRem(350px);
+}    
+
+}
+
+@media only screen and (min-width: calculateRem(1000px)) {
+
+    .fold_mini h1 {
+        padding-top: calculateRem(110px);
+        padding-bottom: 0;
+    }
+    
+}

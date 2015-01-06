@@ -1,0 +1,160 @@
+/* ==========================================================================
+   CONCEPT SPECIFIC STYLES
+   ========================================================================== */
+
+
+// FOLD
+
+
+#concept .fold_mini {
+    background-image: url("../img/railway_1000_750.jpg");
+    background-position: bottom;
+}
+
+
+@media only screen and (min-width: calculateRem(1000px)) {
+    
+    #concept .fold_mini {    
+        background-image: url("../img/railway_1920_750.jpg");
+        background-position: bottom;
+    }
+    
+}
+
+
+// CONCEPT-PROCESS-TITLE
+
+
+#concept-process-title {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 600px;
+    padding-bottom: 0;
+}
+
+#concept-process-title h3 {
+    margin: 0 auto;
+    padding-bottom: 25px;
+    border-bottom: 1px solid $beacon-darkgrey;
+}
+
+
+// CONCEPT-FUNDAMENTALS
+
+
+#concept-fundamentals li {
+    padding: 15px 0;
+    vertical-align: top;
+}
+
+#concept-fundamentals h3 {
+    padding: 5px 0;
+}
+
+@media only screen and (min-width: calculateRem(800px)) {
+
+    #concept-fundamentals li:nth-child(odd) {
+        padding: 15px 15px 15px 0;
+    }
+    
+    #concept-fundamentals li:nth-child(even) {
+        padding: 15px 0 15px 15px;
+    }
+    
+}
+
+
+// CONCEPT-TOP-BAND
+
+
+#concept-top-band {
+    text-align: center;
+    background-color: $beacon-lightgrey;
+    background-image: url("../img/engine_1920_450.jpg");
+}
+
+#concept-top-band .quote {
+    margin: 0 auto;
+    text-align: center;
+    color: #ffffff;
+    float: none;
+//    max-width: 800px;
+}
+
+
+// CONCEPT-PROCESS
+
+
+#concept-process {
+//    padding: 50px 0;
+}
+
+#concept-process ul {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#concept-process li {
+    width: 80%;
+    margin: 0 auto 30px auto;
+    display: inline-block;
+    padding: 0;
+    text-align: center;
+}
+
+#concept-process li:nth-child(3) {
+    margin-right: 0;
+}
+
+#concept-process img {
+    height: 100px;
+    padding-top: 15px;
+}
+
+#concept-process li h3 {
+    padding: 10px 0 50px 0;
+}
+
+#concept-process li p {
+    text-align: center;
+    padding: 30px 0 0 0;
+    border-top: 1px solid $beacon-darkgrey;
+}
+
+
+@media only screen and (min-width: calculateRem(700px)) {
+
+    
+    #concept-process {
+        padding: 100px 0;
+    }
+    
+    #concept-process li {
+        width: 30%;
+        margin: 0px 5% 30px 0;
+        float:left;
+        padding: 0;
+    }
+
+    #concept-process li:nth-child(3) {
+        margin-right: 0;
+    } 
+    
+    #concept-process li p {
+        text-align: center;
+    }
+
+}
+
+
+// CONCEPT-RESULTS
+
+
+#concept-results {
+    background-color: $beacon-mediumgrey;
+}
+
+#concept-results p, #concept-results h2 {
+    color: #ffffff;
+}
+

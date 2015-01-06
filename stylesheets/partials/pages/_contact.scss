@@ -1,0 +1,137 @@
+/* ==========================================================================
+   CONTACT SPECIFIC STYLES
+   ========================================================================== */
+
+
+// FOLD
+
+
+#contact .fold {
+    background-image: url("../img/typewriter_1920_750.jpg");
+}
+
+
+// CONTACT-INTRODUCTION
+
+
+#contact-introduction h2 {
+    text-align: center;
+    float: none;
+    margin: 0 auto;
+}
+
+#contact-introduction p {
+    max-width: 800px;
+    text-align: center;
+    float: none;
+    margin: 0 auto;
+}
+
+
+// CONTACT
+
+
+.contact {
+    vertical-align: top;
+    padding: 0 15px;
+}
+
+.contact + .contact {
+    padding-top: 50px;
+}
+    
+
+.contact h2 {
+    color: #ffffff;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.contact p {
+    color: #ffffff;
+    padding-bottom: 20px;
+}
+
+.contact div {
+    display: block;
+    margin: 10px 0;
+    color:#ffffff;
+//    font-size: calculateRem(18px);
+}
+
+
+// CONTACT-INFORMATION
+
+
+#contact-information {
+    background-color: $beacon-darkgrey;
+}
+
+.contact-email-name {
+    display: block;
+    color: $beacon-salmon;
+    font-weight: 700;
+    padding: 5px 0;
+}
+
+.contact-email-address {
+    display: block;
+    color: #ffffff;
+    font-weight:400;
+    padding: 5px 0;
+}
+
+#contact-phone {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+
+@media only screen and (min-width: calculateRem(800px)) { 
+    
+    .contact + .contact {
+        padding-top: 0px;
+    }
+    
+}
+
+
+@media only screen and (min-width: calculateRem(800px)) { 
+
+    .contact-email-name {
+        display: inline;
+    }
+
+    .contact-email-address {
+        display: inline;
+    }
+
+}
+
+
+// CONTACT-LOCATION
+
+
+.contact-address {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+#contact-location {
+    background-color: $beacon-salmon;
+}
+
+
+// CONTACT-MAP
+
+
+@media only screen and (min-width: calculateRem(1000px)) { 
+
+    #contact-bottom-band {
+        background-image: url("../img/map.png");
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+
+}

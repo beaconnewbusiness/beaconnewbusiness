@@ -1,0 +1,170 @@
+/* ==========================================================================
+   INDEX PAGE
+   ========================================================================== */
+
+
+// FOLD
+
+
+#index .fold {
+    background-image: url("../img/Lightbulbs_1920_750_darkened.jpg");
+}
+
+
+// INDEX-INTRODUCTION
+
+
+#index-introduction {
+    padding-bottom: 0;
+}
+
+#index-intro-quote {
+    width: 100%;
+}
+
+#index-introduction p {
+    max-width: 100%;
+    float:none;
+    @include fontSize(18px);
+    line-height: calculateRem(36px);
+}
+
+@media only screen and (min-width: calculateRem(800px)) {
+
+    #index-introduction p {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        max-width: 88%;
+        @include fontSize(28px);
+        line-height: calculateRem(40px);
+    }
+    
+    #index-introduction .content {
+        background-image: url("../img/Beacon_logo_lines.png");
+        background-position: center right;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+}
+
+
+// INDEX-PAGE-OPTIONS
+
+
+#index-page-options ul {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#index-page-options li {
+    width: 100%;
+    margin: 0 auto 30px auto;
+    padding: 0;
+    background-color: $beacon-lightestgrey;
+    border-bottom: 10px solid $beacon-lightgrey;
+}
+
+#index-page-options li + li + li{
+    margin: 0 auto 30px auto;
+}
+
+
+#index-page-options li h3 {
+    color: $beacon-darkgrey;
+}
+
+#index-page-options li p {
+    width: 100%;
+    padding: 10px 0;
+    color: $beacon-darkgrey;
+}
+
+.options-image {
+    width: 100%;
+    height: 175px;
+    background-size: cover;
+    background-position: center;
+}
+
+#option-one {
+    background-image: url("../img/meeting_thumb.jpg");
+}
+
+#option-two {
+    background-image: url("../img/engine_thumb.jpg");
+}
+
+#option-three {
+    background-image: url("../img/typewriter_thumb.jpg");
+}
+
+.options-overlay {
+    width: 100%;
+    height: 175px;
+    background:rgba(0,0,0,.75);
+    text-align:center;
+    opacity:0;
+   -webkit-transition: opacity .25s ease;
+    -moz-transition: opacity .25s ease;
+}
+
+.options-image:hover .options-overlay {
+    opacity: 1;
+}
+
+.plus {
+    font-weight: bolder;
+    font-size: 3em;
+    color: #ffffff;
+    position: relative;
+    top:25%;
+}
+
+.options-description {
+    background-color: $beacon-lightestgrey;
+    padding: 30px 10px 30px 10px;
+    text-align: left;
+}
+
+.options-description a {
+    width: 100%;
+    padding: 10px 0;
+    color: $beacon-darkgrey;
+    font-style: italic;
+}
+
+.options-description a:hover {
+    color: $beacon-salmon;
+}
+
+@media only screen and (min-width: calculateRem(700px)) {
+
+    #index-page-options li {
+        min-height: 380px;
+        width: 30%;
+        margin: 0px 5% 30px 0;
+        float:left;
+        padding: 0;
+    }
+
+}
+
+
+// INDEX-BOTTOM-BAND
+
+
+#index-bottom-band {
+    text-align: center;
+    margin: 0 auto;
+    background-color: $beacon-mediumgrey;
+}
+
+#index-bottom-band p {
+    text-align: center;
+    color:#ffffff;
+    margin: 0 auto;
+    float:none;
+    
+}
+

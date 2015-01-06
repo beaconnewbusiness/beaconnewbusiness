@@ -1,0 +1,111 @@
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+
+
+header {
+    background-color: $beacon-green;
+}
+
+.desktop_nav {
+    display:none;
+}
+
+#mobile_logo {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0 50px 10px;
+}
+
+#mobile_logo h1 {
+    color:#ffffff;
+    font-weight: 400;
+}
+
+#mobile_menu {
+    display: inline-block;
+    vertical-align: middle;
+    float:right;
+    padding: 10px 10px 0 0;
+}
+
+.mobile_nav> ul {
+    display: none;
+    float:right;
+    text-align: right;
+    margin: 10px 0 0 0;
+    width: 100%;
+}
+
+.mobile_nav ul a {
+    border-bottom: 1px solid #ffffff;
+    width: 100%;
+    display: block;
+    padding: 15px 10px;
+}
+
+.mobile_nav ul a:hover {
+    background-color: #ffffff;
+    color: #172820;
+}
+
+@media only screen and (min-width: calculateRem(500px)) {
+
+    #mobile_logo {
+        padding: calculateRem(50px);
+        padding-left: 0;
+        width: auto;
+        text-align: left;
+    }
+
+    #mobile_menu {
+        padding: calculateRem(50px);
+        padding-right: 0;
+    }    
+
+}
+
+@media only screen and (min-width: calculateRem(1000px)) {
+
+    header {
+        position: fixed;
+        z-index: 1;
+        background-color: transparent;
+//        background-color: $beacon-green;
+    }
+
+    .mobile_nav {
+        display: none;
+    }
+
+    .desktop_nav {
+        display: block;
+        height: calculateRem(150px);
+    }
+
+    .desktop_nav ul {
+        float:right;
+    }
+
+    .desktop_nav ul li {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0 0 0 calculateRem(40px);
+        line-height: calculateRem(150px);
+        font-size: calculateRem(18px);
+    }
+    
+    .desktop_nav ul li a:hover {
+        padding-bottom: 10px;
+        border-bottom: 2px solid #ffffff;
+    }
+
+    #desktop_logo {
+        max-width: calculateRem(180px);
+        display: inline-block;
+        vertical-align: middle;
+        line-height: calculateRem(150px);
+    }
+    
+}

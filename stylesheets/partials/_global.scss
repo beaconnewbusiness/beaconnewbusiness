@@ -1,0 +1,37 @@
+// Font Stack
+
+$bitter: 'Bitter', serif;
+$open-sans: 'Open Sans', 'sans-serif';
+
+// Brand Colours
+
+$beacon-green: #172820;
+$beacon-salmon: #fbcba7;
+$beacon-darkgrey: #414143;
+$beacon-mediumgrey: #484C50;
+$beacon-lightgrey: #d3d4d6;
+$beacon-lightestgrey:#e6e6e6;
+
+// Px to REM mixin
+
+/**
+ * Convert font-size from px to rem with px fallback
+ *
+ * @param $size - the value in pixel you want to convert
+ *
+ * e.g. p {@include fontSize(12px);}
+ * 
+ */
+
+// Function for converting a px based font-size to rem.
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+//Default font size on html element is 100%, equivalent to 16px;
+  @return #{$remSize}rem;
+}
+
+// Mixin that will include the fall back px declaration as well as the calculated rem value.
+@mixin fontSize($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}

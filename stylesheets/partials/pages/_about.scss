@@ -1,0 +1,215 @@
+/* ==========================================================================
+   ABOUT PAGE
+   ========================================================================== */
+
+
+// FOLD
+
+
+#about .fold_mini {
+    background-image: url("../img/wood_1000_750.jpg");
+    background-position: bottom;
+}
+
+
+@media only screen and (min-width: calculateRem(1000px)) {
+    
+    #about .fold_mini {    
+        background-image: url("../img/wood_1920_750.jpg");
+        background-position: bottom;
+    }
+    
+}
+
+
+// ABOUT-INTRODUCTION
+
+
+#about-introduction {
+    text-align: center;
+    padding-bottom: 0;
+}
+
+#about-introduction p {
+    max-width: 800px;
+    margin: 0 auto;
+    float:none;
+}
+
+
+// ABOUT-OUR-SKILLS
+
+
+#about-our-skills {
+    padding: 50px 0;
+}
+
+#about-our-skills ul {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#about-our-skills li {
+    width: 80%;
+    margin: 0 auto 30px auto;
+    display: inline-block;
+    padding: 0;
+    text-align: center;
+}
+
+#about-our-skills li:nth-child(3) {
+    margin-right: 0;
+}
+
+#about-our-skills img {
+    height: 100px;
+//    max-width: 133px;
+}
+
+#about-our-skills li h3 {
+    padding: 10px 0 50px 0;
+}
+
+#about-our-skills li p {
+    text-align: center;
+    padding: 30px 0 0 0;
+    border-top: 1px solid $beacon-darkgrey;
+}
+
+
+@media only screen and (min-width: calculateRem(700px)) {
+
+    
+    #about-our-skills {
+        padding: 100px 0;
+    }
+    
+    #about-our-skills li {
+        width: 30%;
+        margin: 0px 5% 30px 0;
+        float:left;
+        padding: 0;
+    }
+
+    #about-our-skills li:nth-child(3) {
+        margin-right: 0;
+    } 
+    
+}
+
+
+// ABOUT-QUOTE
+
+
+#about-quote-band {
+    background-image: url("../img/meeting_1920_450.jpg");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#about-quote-band .quote {
+    color: #ffffff;
+    text-align: center;
+    margin: 0 auto;
+    float:none;
+}
+
+#about-quote-band p {
+    text-align: center;
+    color: $beacon-lightgrey;
+    padding: 10px 0;
+}
+
+#about-quote-band p + p + p {
+    padding: 0;
+}
+
+@media only screen and (min-width: calculateRem(1000px)) {
+  
+    #about-quote-band .quote {
+        color: #ffffff;
+    }
+
+}
+
+
+// ABOUT-GUNPOWDER-TITLE
+
+
+#about-gunpowder-title {
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 0;
+}
+
+#about-gunpowder-title h3 {
+    margin: 0 auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid $beacon-darkgrey;
+}
+
+#about-gunpowder-title p { 
+    max-width: 800px;
+    margin: 0 auto;
+    float: none;
+}
+
+#about-bomb {
+//    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+
+// ABOUT-GUNPOWDER-FEATURES
+
+
+#about-gunpowder-features ul {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#about-gunpowder-features li {
+    width: 100%;
+    margin: 0 0 30px 0;
+    float:left;
+    padding: 0;
+}
+
+#about-gunpowder-features li:nth-child(3) {
+    margin-right: 0;
+}
+
+
+#about-gunpowder-features div {
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+}
+
+#gunpowder-one {
+    background-image: url("../img/gunpowder_thumb.jpg");
+}
+
+#gunpowder-two {
+    background-image: url("../img/phone_thumb.jpg");
+}
+
+#gunpowder-three {
+    background-image: url("../img/mac_thumb.jpg");
+}
+
+@media only screen and (min-width: calculateRem(700px)) {
+
+    #about-gunpowder-features li {
+        width: 30%;
+        margin: 0px 5% 30px 0;
+        float:left;
+        padding: 0;
+    }
+
+    #about-gunpowder-features li:nth-child(3) {
+        margin-right: 0;
+    } 
+
+}
