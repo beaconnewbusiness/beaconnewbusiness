@@ -575,32 +575,48 @@ footer li a:hover {
   background-image: url("../img/Lightbulbs_1920_750_darkened.jpg"); }
 
 #index-introduction {
-  padding-bottom: 0; }
+  background-color: #e6e6e6; }
 
-#index-intro-quote {
-  width: 100%; }
+#index-introduction h2 {
+  text-align: center;
+  margin: 0 auto; }
 
 #index-introduction p {
-  max-width: 100%;
+  text-align: center;
+  width: 95%;
+  max-width: 750px;
   float: none;
-  font-size: 18px;
-  font-size: 1.125rem;
-  line-height: 2.25rem; }
+  margin: 0 auto;
+  color: #414143; }
+
+#index-responsive-image {
+  display: block; }
+
+#index-responsive-image ul {
+  margin: 20px auto;
+  text-align: center; }
+
+#index-responsive-image ul li {
+  display: inline-block;
+  width: 200px;
+  max-width: 50%;
+  padding: 20px 10px; }
+
+#index-image {
+  display: none;
+  padding: 25px 0; }
 
 @media only screen and (min-width: 50rem) {
   #index-introduction p {
     padding-top: 10px;
-    padding-bottom: 10px;
-    max-width: 88%;
-    font-size: 28px;
-    font-size: 1.75rem;
-    line-height: 2.5rem; }
+    padding-bottom: 10px; } }
+@media only screen and (min-width: 50rem) {
+  #index-responsive-image {
+    display: none; }
 
-  #index-introduction .content {
-    background-image: url("../img/Beacon_logo_line.png");
-    background-position: center right;
-    background-repeat: no-repeat;
-    background-size: contain; } }
+  #index-image {
+    display: block;
+    padding: 25px 0; } }
 #index-page-options ul {
   margin: 0 auto;
   text-align: center; }
@@ -788,6 +804,7 @@ footer li a:hover {
   float: none; }
 
 #about-bomb {
+  max-width: 100px;
   margin-bottom: 25px; }
 
 #about-gunpowder-features ul {
@@ -935,8 +952,8 @@ footer li a:hover {
   text-align: center; }
 
 #login li img {
-  width: 3.125rem;
-  padding: 25px 0; }
+  width: 6.25rem;
+  margin: 25px 0; }
 
 @media only screen and (min-width: 62.5rem) {
   #login .td {

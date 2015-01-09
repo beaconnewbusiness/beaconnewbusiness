@@ -29,8 +29,8 @@
 }
 
 #login li img {
-    width: calculateRem(50px);
-    padding: 25px 0;
+    width: calculateRem(100px);
+    margin: 25px 0;
 }
 
 @media only screen and (min-width: calculateRem(1000px)) { 
