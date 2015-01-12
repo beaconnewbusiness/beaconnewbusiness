@@ -87,6 +87,7 @@
 
 #concept-process {
 //    padding: 50px 0;
+    background-color: $beacon-lightestgrey;
 }
 
 #concept-process ul {
@@ -107,7 +108,7 @@
 }
 
 #concept-process img {
-    height: 100px;
+    height: 130px;
     padding-top: 15px;
 }
 
@@ -127,6 +128,10 @@
     
     #concept-process {
         padding: 100px 0;
+    }
+    
+    #concept-process img {
+        padding-top: 0;
     }
     
     #concept-process li {

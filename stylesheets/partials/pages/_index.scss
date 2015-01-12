@@ -84,9 +84,15 @@
 // INDEX-PAGE-OPTIONS
 
 
-#index-page-options ul {
-    margin: 0 auto;
+#index-page-options h2 {
     text-align: center;
+    margin: 0 auto;
+}
+
+#index-page-options ul {
+//    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
 }
 
 #index-page-options li {

@@ -617,9 +617,13 @@ footer li a:hover {
   #index-image {
     display: block;
     padding: 25px 0; } }
+#index-page-options h2 {
+  text-align: center;
+  margin: 0 auto; }
+
 #index-page-options ul {
-  margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+  padding-top: 50px; }
 
 #index-page-options li {
   width: 100%;
@@ -718,7 +722,8 @@ footer li a:hover {
     background-position: bottom; } }
 #about-introduction {
   text-align: center;
-  padding-bottom: 0; }
+  padding-bottom: 0;
+  background-color: #e6e6e6; }
 
 #about-introduction p {
   max-width: 800px;
@@ -726,7 +731,8 @@ footer li a:hover {
   float: none; }
 
 #about-our-skills {
-  padding: 50px 0; }
+  padding: 50px 0;
+  background-color: #e6e6e6; }
 
 #about-our-skills ul {
   margin: 0 auto;
@@ -743,7 +749,7 @@ footer li a:hover {
   margin-right: 0; }
 
 #about-our-skills img {
-  height: 100px; }
+  height: 130px; }
 
 #about-our-skills li h3 {
   padding: 10px 0 50px 0; }
@@ -889,6 +895,9 @@ footer li a:hover {
   color: #ffffff;
   float: none; }
 
+#concept-process {
+  background-color: #e6e6e6; }
+
 #concept-process ul {
   margin: 0 auto;
   text-align: center; }
@@ -904,7 +913,7 @@ footer li a:hover {
   margin-right: 0; }
 
 #concept-process img {
-  height: 100px;
+  height: 130px;
   padding-top: 15px; }
 
 #concept-process li h3 {
@@ -918,6 +927,9 @@ footer li a:hover {
 @media only screen and (min-width: 43.75rem) {
   #concept-process {
     padding: 100px 0; }
+
+  #concept-process img {
+    padding-top: 0; }
 
   #concept-process li {
     width: 30%;
